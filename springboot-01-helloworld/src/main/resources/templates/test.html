@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>[[#{test.tip}]]</h1>
+
+<div>
+    <a th:href="@{/test(l='zh_CN')}">中文</a>
+    <a th:href="@{/test(l='en_US')}">English</a>
+</div>
+</body>
+</html>
